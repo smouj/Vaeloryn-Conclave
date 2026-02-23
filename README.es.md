@@ -18,7 +18,7 @@
 **Multi-agent council for strategic consensus and execution.**
 
 ## Visión
-Vaeloryn-Conclave es una skill orientada a producción dentro del **Universo SuperAgentes de smouj**. Está diseñada para resolver un problema operativo concreto con ejecución local-first, trazas de razonamiento transparentes y controles de seguridad prácticos. La arquitectura prioriza herramientas gratuitas/open-source, comportamiento determinista e integración modular con otras skills autónomas.
+Vaeloryn-Conclave es una skill de coordinación multiagente colaborativa que estructura deliberación por roles y decisiones por consenso. Está diseñada para problemas complejos donde varias perspectivas de razonamiento deben converger en una acción ejecutable.
 
 ## Superpoder principal
 - ⚡ **Role-based deliberation with auditable final decisions**
