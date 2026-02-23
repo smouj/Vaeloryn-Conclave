@@ -1,8 +1,10 @@
-langchain
-langgraph
-llama-index
+fastapi
+mypy>=1.10
+networkx
 pydantic
-python-dotenv
-pytest
-ruff
-mypy
+pydantic>=2.7
+pytest>=8.0
+python-dotenv>=1.0
+pyyaml
+redis
+ruff>=0.6
