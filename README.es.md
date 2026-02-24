@@ -1,13 +1,13 @@
 # Vaeloryn-Conclave
 
 <p align="center">
-  <img src="./assets/branding/logo.svg" alt="Vaeloryn-Conclave logo" width="88" />
+  <img src="./assets/branding/logo.svg" alt="Logo de Vaeloryn-Conclave" width="88" />
 </p>
 
 ![Language](https://img.shields.io/badge/language-Python%203.11%2B-blue)
 ![License](https://img.shields.io/github/license/smouj/Vaeloryn-Conclave)
 ![Last Commit](https://img.shields.io/github/last-commit/smouj/Vaeloryn-Conclave)
-![CI](https://img.shields.io/badge/CI-planned-lightgrey)
+![CI](https://img.shields.io/github/actions/workflow/status/smouj/Vaeloryn-Conclave/ci.yml?branch=main)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/smouj013_dev)
 
 <p align="center">
@@ -15,63 +15,44 @@
   <a href="./README.es.md"><img src="https://img.shields.io/badge/README-Español-c92a2a?style=for-the-badge" alt="Español"></a>
 </p>
 
-**Multi-agent council for strategic consensus and execution.**
+**Collaborative multi-agent council for complex decisions.**
 
 ## Visión
-Vaeloryn-Conclave es una skill de coordinación multiagente colaborativa que estructura deliberación por roles y decisiones por consenso. Está diseñada para problemas complejos donde varias perspectivas de razonamiento deben converger en una acción ejecutable.
+Orchestrates structured deliberation and outputs executable consensus manifests.
+
+## Problema que resuelve
+Complex goals require more than one reasoning perspective.
 
 ## Superpoder principal
-- ⚡ **Role-based deliberation with auditable final decisions**
+- ⚡ **Role-based deliberation with auditable consensus output**
 
-## Estado actual (Febrero 2026)
-- 🚧 Fase de ideación y scaffolding robusto
-- Próximos hitos:
-  - [ ] Finalizar contratos de dominio e interfaces
-  - [ ] Publicar un comando CLI mínimo ejecutable
-  - [ ] Añadir perfil de modelo local Ollama y estrategia de fallback
-  - [ ] Implementar un ejemplo completo end-to-end
-  - [ ] Añadir puertas de calidad (lint, typecheck, test)
-  - [ ] Publicar arquitectura y runbook operativo
-
-## Arquitectura planeada (stack gratuito/open-source)
-- **Lenguaje principal:** Python 3.11+
-- **Framework agente:** AutoGen
-- **Modelos locales:** Ollama (Llama 3.1, Qwen2.5, DeepSeek-Coder, Mistral)
-- **Dependencias clave:** networkx, pyyaml, pydantic, redis, fastapi
-- **Modelo de ejecución:** local-first, despliegue self-hosted opcional
-
-## Blueprint de capacidades
-- ✅ Agent role contracts
-- ✅ Debate rounds
-- ✅ Consensus protocol
-- ✅ Decision audit logs
-- ✅ Execution delegation
+## Casos de uso clave
+- ✅ Multi-step planning
+- ✅ Task delegation
+- ✅ Consensus decisions
+- ✅ Rollback-aware orchestration
 
 
-## Estructura del proyecto
-```text
-Vaeloryn-Conclave/
-├── src/vaeloryn_conclave/
-│   ├── core/           # orquestación de dominio y políticas
-│   ├── adapters/       # integraciones externas y puentes de herramientas
-│   ├── memory/         # estado, recuperación y estrategias de contexto
-│   └── cli.py          # interfaz de comandos local para operación
-├── docs/
-│   ├── IMPLEMENTATION.md
-│   ├── ARCHITECTURE.md
-│   └── RUNBOOK.md
-├── examples/
-├── tests/
-├── requirements.txt
-└── README.md
-```
+## Superficie API
+`POST /deliberate`, `GET /health`
+
+## Stack técnico
+- **Stack base:** FastAPI + Redis communication patterns + orchestration contracts
+- **Ejecución:** local-first, apto para self-hosting
+- **Infra:** compatibilidad con Docker Compose + Caddy + Redis/Chroma/Ollama
+
+## Estado actual (Feb 2026)
+- ✅ Scaffold público disponible
+- ✅ README bilingüe (EN por defecto + ES)
+- ✅ Base de CI + release configurada
+- 🚧 Endurecimiento de funcionalidades en progreso
 
 ## Inicio rápido
 ```bash
 git clone https://github.com/smouj/Vaeloryn-Conclave.git
 cd Vaeloryn-Conclave
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 python -m src.vaeloryn_conclave.cli --help
 ```
@@ -83,10 +64,9 @@ python -m src.vaeloryn_conclave.cli --help
 - [Guía de despliegue](./docs/DEPLOYMENT.md)
 - [Proceso de releases](./docs/RELEASE.md)
 - [Changelog](./CHANGELOG.md)
-- [Contribución](./CONTRIBUTING.md)
 
 ## Contribución
-Las contribuciones son bienvenidas. Lee **CONTRIBUTING.md** antes de abrir issues o PRs.
+Las contribuciones son bienvenidas. Lee [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Licencia
 MIT © 2026 smouj
